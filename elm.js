@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html><head><meta charset="UTF-8"><title>Main</title><style>html,head,body { padding:0; margin:0; }
-body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">
+
 (function() {
 'use strict';
 
@@ -136,6 +134,7 @@ function A9(fun, a, b, c, d, e, f, g, h, i)
     ? fun.func(a, b, c, d, e, f, g, h, i)
     : fun(a)(b)(c)(d)(e)(f)(g)(h)(i);
 }
+
 //import Native.List //
 
 var _elm_lang$core$Native_Array = function() {
@@ -1102,7 +1101,8 @@ return {
 	fromJSArray: fromJSArray
 };
 
-}();//import Native.Utils //
+}();
+//import Native.Utils //
 
 var _elm_lang$core$Native_Basics = function() {
 
@@ -1242,7 +1242,8 @@ return {
 	isInfinite: isInfinite
 };
 
-}();//import //
+}();
+//import //
 
 var _elm_lang$core$Native_Utils = function() {
 
@@ -1730,7 +1731,8 @@ return {
 	toString: toString
 };
 
-}();var _elm_lang$core$Basics$never = function (_p0) {
+}();
+var _elm_lang$core$Basics$never = function (_p0) {
 	never:
 	while (true) {
 		var _p1 = _p0;
@@ -1855,6 +1857,7 @@ var _elm_lang$core$Basics$LT = {ctor: 'LT'};
 var _elm_lang$core$Basics$JustOneMore = function (a) {
 	return {ctor: 'JustOneMore', _0: a};
 };
+
 var _elm_lang$core$Maybe$withDefault = F2(
 	function ($default, maybe) {
 		var _p0 = maybe;
@@ -1927,6 +1930,7 @@ var _elm_lang$core$Maybe$map5 = F6(
 			return _elm_lang$core$Maybe$Nothing;
 		}
 	});
+
 //import Native.Utils //
 
 var _elm_lang$core$Native_List = function() {
@@ -2063,7 +2067,8 @@ return {
 	sortWith: F2(sortWith)
 };
 
-}();var _elm_lang$core$List$sortWith = _elm_lang$core$Native_List.sortWith;
+}();
+var _elm_lang$core$List$sortWith = _elm_lang$core$Native_List.sortWith;
 var _elm_lang$core$List$sortBy = _elm_lang$core$Native_List.sortBy;
 var _elm_lang$core$List$sort = function (xs) {
 	return A2(_elm_lang$core$List$sortBy, _elm_lang$core$Basics$identity, xs);
@@ -2608,6 +2613,7 @@ var _elm_lang$core$List$indexedMap = F2(
 				_elm_lang$core$List$length(xs) - 1),
 			xs);
 	});
+
 var _elm_lang$core$Array$append = _elm_lang$core$Native_Array.append;
 var _elm_lang$core$Array$length = _elm_lang$core$Native_Array.length;
 var _elm_lang$core$Array$isEmpty = function (array) {
@@ -2662,6 +2668,7 @@ var _elm_lang$core$Array$repeat = F2(
 			_elm_lang$core$Basics$always(e));
 	});
 var _elm_lang$core$Array$Array = {ctor: 'Array'};
+
 //import Native.Utils //
 
 var _elm_lang$core$Native_Debug = function() {
@@ -2691,7 +2698,8 @@ return {
 	log: F2(log)
 };
 
-}();//import Maybe, Native.List, Native.Utils, Result //
+}();
+//import Maybe, Native.List, Native.Utils, Result //
 
 var _elm_lang$core$Native_String = function() {
 
@@ -3026,6 +3034,7 @@ return {
 };
 
 }();
+
 //import Native.Utils //
 
 var _elm_lang$core$Native_Char = function() {
@@ -3039,7 +3048,8 @@ return {
 	toLocaleLower: function(c) { return _elm_lang$core$Native_Utils.chr(c.toLocaleLowerCase()); }
 };
 
-}();var _elm_lang$core$Char$fromCode = _elm_lang$core$Native_Char.fromCode;
+}();
+var _elm_lang$core$Char$fromCode = _elm_lang$core$Native_Char.fromCode;
 var _elm_lang$core$Char$toCode = _elm_lang$core$Native_Char.toCode;
 var _elm_lang$core$Char$toLocaleLower = _elm_lang$core$Native_Char.toLocaleLower;
 var _elm_lang$core$Char$toLocaleUpper = _elm_lang$core$Native_Char.toLocaleUpper;
@@ -3081,6 +3091,7 @@ var _elm_lang$core$Char$isHexDigit = function ($char) {
 		_elm_lang$core$Native_Utils.chr('F'),
 		$char));
 };
+
 var _elm_lang$core$Result$toMaybe = function (result) {
 	var _p0 = result;
 	if (_p0.ctor === 'Ok') {
@@ -3222,6 +3233,7 @@ var _elm_lang$core$Result$fromMaybe = F2(
 			return _elm_lang$core$Result$Err(err);
 		}
 	});
+
 var _elm_lang$core$String$fromList = _elm_lang$core$Native_String.fromList;
 var _elm_lang$core$String$toList = _elm_lang$core$Native_String.toList;
 var _elm_lang$core$String$toFloat = _elm_lang$core$Native_String.toFloat;
@@ -3265,6 +3277,7 @@ var _elm_lang$core$String$fromChar = function ($char) {
 	return A2(_elm_lang$core$String$cons, $char, '');
 };
 var _elm_lang$core$String$isEmpty = _elm_lang$core$Native_String.isEmpty;
+
 var _elm_lang$core$Dict$foldr = F3(
 	function (f, acc, t) {
 		foldr:
@@ -4181,6 +4194,7 @@ var _elm_lang$core$Dict$diff = F2(
 			t1,
 			t2);
 	});
+
 //import Maybe, Native.Array, Native.List, Native.Utils, Result //
 
 var _elm_lang$core$Native_Json = function() {
@@ -4761,6 +4775,7 @@ return {
 };
 
 }();
+
 var _elm_lang$core$Json_Encode$list = _elm_lang$core$Native_Json.encodeList;
 var _elm_lang$core$Json_Encode$array = _elm_lang$core$Native_Json.encodeArray;
 var _elm_lang$core$Json_Encode$object = _elm_lang$core$Native_Json.encodeObject;
@@ -4771,6 +4786,7 @@ var _elm_lang$core$Json_Encode$int = _elm_lang$core$Native_Json.identity;
 var _elm_lang$core$Json_Encode$string = _elm_lang$core$Native_Json.identity;
 var _elm_lang$core$Json_Encode$encode = _elm_lang$core$Native_Json.encode;
 var _elm_lang$core$Json_Encode$Value = {ctor: 'Value'};
+
 var _elm_lang$core$Json_Decode$null = _elm_lang$core$Native_Json.decodeNull;
 var _elm_lang$core$Json_Decode$value = _elm_lang$core$Native_Json.decodePrimitive('value');
 var _elm_lang$core$Json_Decode$andThen = _elm_lang$core$Native_Json.andThen;
@@ -4833,8 +4849,10 @@ var _elm_lang$core$Json_Decode$int = _elm_lang$core$Native_Json.decodePrimitive(
 var _elm_lang$core$Json_Decode$bool = _elm_lang$core$Native_Json.decodePrimitive('bool');
 var _elm_lang$core$Json_Decode$string = _elm_lang$core$Native_Json.decodePrimitive('string');
 var _elm_lang$core$Json_Decode$Decoder = {ctor: 'Decoder'};
+
 var _elm_lang$core$Debug$crash = _elm_lang$core$Native_Debug.crash;
 var _elm_lang$core$Debug$log = _elm_lang$core$Native_Debug.log;
+
 var _elm_lang$core$Tuple$mapSecond = F2(
 	function (func, _p0) {
 		var _p1 = _p0;
@@ -4861,6 +4879,7 @@ var _elm_lang$core$Tuple$first = function (_p6) {
 	var _p7 = _p6;
 	return _p7._0;
 };
+
 //import //
 
 var _elm_lang$core$Native_Platform = function() {
@@ -5421,6 +5440,7 @@ return {
 };
 
 }();
+
 //import Native.Utils //
 
 var _elm_lang$core$Native_Scheduler = function() {
@@ -5701,7 +5721,8 @@ return {
 	rawSend: rawSend
 };
 
-}();var _elm_lang$core$Platform_Cmd$batch = _elm_lang$core$Native_Platform.batch;
+}();
+var _elm_lang$core$Platform_Cmd$batch = _elm_lang$core$Native_Platform.batch;
 var _elm_lang$core$Platform_Cmd$none = _elm_lang$core$Platform_Cmd$batch(
 	{ctor: '[]'});
 var _elm_lang$core$Platform_Cmd_ops = _elm_lang$core$Platform_Cmd_ops || {};
@@ -5715,11 +5736,13 @@ _elm_lang$core$Platform_Cmd_ops['!'] = F2(
 	});
 var _elm_lang$core$Platform_Cmd$map = _elm_lang$core$Native_Platform.map;
 var _elm_lang$core$Platform_Cmd$Cmd = {ctor: 'Cmd'};
+
 var _elm_lang$core$Platform_Sub$batch = _elm_lang$core$Native_Platform.batch;
 var _elm_lang$core$Platform_Sub$none = _elm_lang$core$Platform_Sub$batch(
 	{ctor: '[]'});
 var _elm_lang$core$Platform_Sub$map = _elm_lang$core$Native_Platform.map;
 var _elm_lang$core$Platform_Sub$Sub = {ctor: 'Sub'};
+
 var _elm_lang$core$Platform$hack = _elm_lang$core$Native_Scheduler.succeed;
 var _elm_lang$core$Platform$sendToSelf = _elm_lang$core$Native_Platform.sendToSelf;
 var _elm_lang$core$Platform$sendToApp = _elm_lang$core$Native_Platform.sendToApp;
@@ -5729,6 +5752,7 @@ var _elm_lang$core$Platform$Program = {ctor: 'Program'};
 var _elm_lang$core$Platform$Task = {ctor: 'Task'};
 var _elm_lang$core$Platform$ProcessId = {ctor: 'ProcessId'};
 var _elm_lang$core$Platform$Router = {ctor: 'Router'};
+
 var _MichaelCombs28$elm_dom$DOM$className = A2(
 	_elm_lang$core$Json_Decode$at,
 	{
@@ -5855,6 +5879,7 @@ var _MichaelCombs28$elm_dom$DOM$Rectangle = F4(
 	function (a, b, c, d) {
 		return {top: a, left: b, width: c, height: d};
 	});
+
 var _MichaelCombs28$elm_parts$Parts$map2nd = F2(
 	function (f, _p0) {
 		var _p1 = _p0;
@@ -6050,6 +6075,7 @@ var _MichaelCombs28$elm_parts$Parts$create1 = F5(
 			get,
 			view(embeddedUpdate));
 	});
+
 var _elm_lang$virtual_dom$VirtualDom_Debug$wrap;
 var _elm_lang$virtual_dom$VirtualDom_Debug$wrapWithFlags;
 
@@ -7931,6 +7957,7 @@ return {
 };
 
 }();
+
 var _elm_lang$virtual_dom$VirtualDom$programWithFlags = function (impl) {
 	return A2(_elm_lang$virtual_dom$Native_VirtualDom.programWithFlags, _elm_lang$virtual_dom$VirtualDom_Debug$wrapWithFlags, impl);
 };
@@ -7961,6 +7988,7 @@ var _elm_lang$virtual_dom$VirtualDom$Options = F2(
 	});
 var _elm_lang$virtual_dom$VirtualDom$Node = {ctor: 'Node'};
 var _elm_lang$virtual_dom$VirtualDom$Property = {ctor: 'Property'};
+
 var _elm_lang$html$Html$programWithFlags = _elm_lang$virtual_dom$VirtualDom$programWithFlags;
 var _elm_lang$html$Html$program = _elm_lang$virtual_dom$VirtualDom$program;
 var _elm_lang$html$Html$beginnerProgram = function (_p0) {
@@ -8085,6 +8113,7 @@ var _elm_lang$html$Html$details = _elm_lang$html$Html$node('details');
 var _elm_lang$html$Html$summary = _elm_lang$html$Html$node('summary');
 var _elm_lang$html$Html$menuitem = _elm_lang$html$Html$node('menuitem');
 var _elm_lang$html$Html$menu = _elm_lang$html$Html$node('menu');
+
 var _elm_lang$html$Html_Attributes$map = _elm_lang$virtual_dom$VirtualDom$mapProperty;
 var _elm_lang$html$Html_Attributes$attribute = _elm_lang$virtual_dom$VirtualDom$attribute;
 var _elm_lang$html$Html_Attributes$contextmenu = function (value) {
@@ -8434,6 +8463,7 @@ var _elm_lang$html$Html_Attributes$classList = function (list) {
 				A2(_elm_lang$core$List$filter, _elm_lang$core$Tuple$second, list))));
 };
 var _elm_lang$html$Html_Attributes$style = _elm_lang$virtual_dom$VirtualDom$style;
+
 //import Native.Scheduler //
 
 var _elm_lang$core$Native_Time = function() {
@@ -8460,7 +8490,8 @@ return {
 	setInterval_: F2(setInterval_)
 };
 
-}();var _elm_lang$core$Task$onError = _elm_lang$core$Native_Scheduler.onError;
+}();
+var _elm_lang$core$Task$onError = _elm_lang$core$Native_Scheduler.onError;
 var _elm_lang$core$Task$andThen = _elm_lang$core$Native_Scheduler.andThen;
 var _elm_lang$core$Task$spawnCmd = F2(
 	function (router, _p0) {
@@ -8656,6 +8687,7 @@ var _elm_lang$core$Task$cmdMap = F2(
 			A2(_elm_lang$core$Task$map, tagger, _p11._0));
 	});
 _elm_lang$core$Native_Platform.effectManagers['Task'] = {pkg: 'elm-lang/core', init: _elm_lang$core$Task$init, onEffects: _elm_lang$core$Task$onEffects, onSelfMsg: _elm_lang$core$Task$onSelfMsg, tag: 'cmd', cmdMap: _elm_lang$core$Task$cmdMap};
+
 var _elm_lang$core$Time$setInterval = _elm_lang$core$Native_Time.setInterval_;
 var _elm_lang$core$Time$spawnHelp = F3(
 	function (router, intervals, processes) {
@@ -8843,9 +8875,11 @@ var _elm_lang$core$Time$subMap = F2(
 			});
 	});
 _elm_lang$core$Native_Platform.effectManagers['Time'] = {pkg: 'elm-lang/core', init: _elm_lang$core$Time$init, onEffects: _elm_lang$core$Time$onEffects, onSelfMsg: _elm_lang$core$Time$onSelfMsg, tag: 'sub', subMap: _elm_lang$core$Time$subMap};
+
 var _elm_lang$core$Process$kill = _elm_lang$core$Native_Scheduler.kill;
 var _elm_lang$core$Process$sleep = _elm_lang$core$Native_Scheduler.sleep;
 var _elm_lang$core$Process$spawn = _elm_lang$core$Native_Scheduler.spawn;
+
 var _MichaelCombs28$elm_mdl$Material_Helpers$partsUpdatePort = function (component) {
 	var _p0 = component;
 	if (_p0.ctor === 'Just') {
@@ -8951,6 +8985,7 @@ var _MichaelCombs28$elm_mdl$Material_Helpers$filter = F3(
 				},
 				html));
 	});
+
 var _elm_lang$html$Html_Events$keyCode = A2(_elm_lang$core$Json_Decode$field, 'keyCode', _elm_lang$core$Json_Decode$int);
 var _elm_lang$html$Html_Events$targetChecked = A2(
 	_elm_lang$core$Json_Decode$at,
@@ -9065,6 +9100,7 @@ var _elm_lang$html$Html_Events$Options = F2(
 	function (a, b) {
 		return {stopPropagation: a, preventDefault: b};
 	});
+
 var _MichaelCombs28$elm_mdl$Material_Options_Internal$None = {ctor: 'None'};
 var _MichaelCombs28$elm_mdl$Material_Options_Internal$Set = function (a) {
 	return {ctor: 'Set', _0: a};
@@ -9085,6 +9121,7 @@ var _MichaelCombs28$elm_mdl$Material_Options_Internal$CSS = function (a) {
 var _MichaelCombs28$elm_mdl$Material_Options_Internal$Class = function (a) {
 	return {ctor: 'Class', _0: a};
 };
+
 var _MichaelCombs28$elm_mdl$Material_Options$id = function (_p0) {
 	return _MichaelCombs28$elm_mdl$Material_Options_Internal$Attribute(
 		_elm_lang$html$Html_Attributes$id(_p0));
@@ -9335,6 +9372,7 @@ var _MichaelCombs28$elm_mdl$Material_Options$img = F2(
 			attrs,
 			{ctor: '[]'});
 	});
+
 var _MichaelCombs28$elm_mdl$Material_Ripple$styles = F2(
 	function (m, frame) {
 		var r = m.rect;
@@ -9638,6 +9676,7 @@ var _MichaelCombs28$elm_mdl$Material_Ripple$view = function (_p7) {
 			},
 			_p7));
 };
+
 var _MichaelCombs28$elm_mdl$Material_Button$icon = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-button--icon');
 var _MichaelCombs28$elm_mdl$Material_Button$minifab = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-button--mini-fab');
 var _MichaelCombs28$elm_mdl$Material_Button$fab = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-button--fab');
@@ -9839,6 +9878,7 @@ var _MichaelCombs28$elm_mdl$Material_Button$Config = F4(
 	function (a, b, c, d) {
 		return {ripple: a, onClick: b, disabled: c, type_: d};
 	});
+
 var _MichaelCombs28$elm_mdl$Material_Icon$size48 = A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-size', '48px');
 var _MichaelCombs28$elm_mdl$Material_Icon$size36 = A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-size', '36px');
 var _MichaelCombs28$elm_mdl$Material_Icon$size24 = A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-size', '24px');
@@ -9895,6 +9935,7 @@ var _MichaelCombs28$elm_mdl$Material_Icon$i = function (name) {
 var _MichaelCombs28$elm_mdl$Material_Icon$Config = function (a) {
 	return {onClick: a};
 };
+
 var _MichaelCombs28$elm_mdl$Material_Textfield$update = F2(
 	function (action, model) {
 		var _p0 = action;
@@ -10476,6 +10517,7 @@ var _MichaelCombs28$elm_mdl$Material_Textfield$render = A5(
 				{textfield: x});
 		}),
 	_MichaelCombs28$elm_mdl$Material_Textfield$defaultModel);
+
 var _elm_lang$dom$Native_Dom = function() {
 
 var fakeNode = {
@@ -10658,8 +10700,10 @@ return {
 };
 
 }();
+
 var _elm_lang$dom$Dom_LowLevel$onWindow = _elm_lang$dom$Native_Dom.onWindow;
 var _elm_lang$dom$Dom_LowLevel$onDocument = _elm_lang$dom$Native_Dom.onDocument;
+
 var _elm_lang$mouse$Mouse_ops = _elm_lang$mouse$Mouse_ops || {};
 _elm_lang$mouse$Mouse_ops['&>'] = F2(
 	function (t1, t2) {
@@ -10842,6 +10886,7 @@ var _elm_lang$mouse$Mouse$subMap = F2(
 			});
 	});
 _elm_lang$core$Native_Platform.effectManagers['Mouse'] = {pkg: 'elm-lang/mouse', init: _elm_lang$mouse$Mouse$init, onEffects: _elm_lang$mouse$Mouse$onEffects, onSelfMsg: _elm_lang$mouse$Mouse$onSelfMsg, tag: 'sub', subMap: _elm_lang$mouse$Mouse$subMap};
+
 var _MichaelCombs28$elm_mdl$Material_Menu_Geometry$Geometry = F5(
 	function (a, b, c, d, e) {
 		return {button: a, menu: b, container: c, offsetTops: d, offsetHeights: e};
@@ -10872,6 +10917,7 @@ var _MichaelCombs28$elm_mdl$Material_Menu_Geometry$decode = A6(
 				_MichaelCombs28$elm_dom$DOM$childNode,
 				1,
 				_MichaelCombs28$elm_dom$DOM$childNodes(_MichaelCombs28$elm_dom$DOM$offsetHeight)))));
+
 var _MichaelCombs28$elm_mdl$Material_Menu$toPx = function (_p0) {
 	return A3(
 		_elm_lang$core$Basics$flip,
@@ -11883,6 +11929,7 @@ var _MichaelCombs28$elm_mdl$Material_Menu$render = A5(
 				{menu: x});
 		}),
 	_MichaelCombs28$elm_mdl$Material_Menu$defaultModel);
+
 var _MichaelCombs28$elm_mdl$Material_Snackbar$enqueue = F2(
 	function (contents, model) {
 		return _elm_lang$core$Native_Utils.update(
@@ -12213,9 +12260,11 @@ var _MichaelCombs28$elm_mdl$Material_Snackbar$add = F2(
 		return _MichaelCombs28$elm_mdl$Material_Snackbar$tryDequeue(
 			A2(_MichaelCombs28$elm_mdl$Material_Snackbar$enqueue, contents, model));
 	});
+
 var _elm_lang$html$Html_Keyed$node = _elm_lang$virtual_dom$VirtualDom$keyedNode;
 var _elm_lang$html$Html_Keyed$ol = _elm_lang$html$Html_Keyed$node('ol');
 var _elm_lang$html$Html_Keyed$ul = _elm_lang$html$Html_Keyed$node('ul');
+
 var _elm_lang$window$Native_Window = function()
 {
 
@@ -12230,7 +12279,8 @@ return {
 	size: size
 };
 
-}();var _elm_lang$window$Window_ops = _elm_lang$window$Window_ops || {};
+}();
+var _elm_lang$window$Window_ops = _elm_lang$window$Window_ops || {};
 _elm_lang$window$Window_ops['&>'] = F2(
 	function (task1, task2) {
 		return A2(
@@ -12336,6 +12386,7 @@ var _elm_lang$window$Window$subMap = F2(
 			});
 	});
 _elm_lang$core$Native_Platform.effectManagers['Window'] = {pkg: 'elm-lang/window', init: _elm_lang$window$Window$init, onEffects: _elm_lang$window$Window$onEffects, onSelfMsg: _elm_lang$window$Window$onSelfMsg, tag: 'sub', subMap: _elm_lang$window$Window$subMap};
+
 var _MichaelCombs28$elm_mdl$Material_Layout$drawerView = F3(
 	function (lift, isVisible, elems) {
 		return A2(
@@ -13414,6 +13465,7 @@ var _MichaelCombs28$elm_mdl$Material_Layout$render = A4(
 				c,
 				{layout: x});
 		}));
+
 var _MichaelCombs28$elm_mdl$Material_Toggles$group = function (s) {
 	return _MichaelCombs28$elm_mdl$Material_Options$set(
 		function (options) {
@@ -13879,6 +13931,7 @@ var _MichaelCombs28$elm_mdl$Material_Toggles$viewRadio = F4(
 			});
 	});
 var _MichaelCombs28$elm_mdl$Material_Toggles$radio = _MichaelCombs28$elm_mdl$Material_Toggles$render(_MichaelCombs28$elm_mdl$Material_Toggles$viewRadio);
+
 var _MichaelCombs28$elm_mdl$Material_Tooltip$set = F2(
 	function (x, y) {
 		return _elm_lang$core$Native_Utils.update(
@@ -14215,6 +14268,7 @@ var _MichaelCombs28$elm_mdl$Material_Tooltip$left = _MichaelCombs28$elm_mdl$Mate
 			options,
 			{position: _MichaelCombs28$elm_mdl$Material_Tooltip$Left});
 	});
+
 var _MichaelCombs28$elm_mdl$Material_Tabs$activeTab = function (k) {
 	return _MichaelCombs28$elm_mdl$Material_Options$set(
 		function (config) {
@@ -14471,6 +14525,7 @@ var _MichaelCombs28$elm_mdl$Material_Tabs$textLabel = F2(
 				_1: {ctor: '[]'}
 			});
 	});
+
 var _MichaelCombs28$elm_mdl$Material$init = function (lift) {
 	return _MichaelCombs28$elm_mdl$Material_Layout$sub0(lift);
 };
@@ -14518,6 +14573,7 @@ var _MichaelCombs28$elm_mdl$Material$Model = F8(
 	function (a, b, c, d, e, f, g, h) {
 		return {button: a, textfield: b, menu: c, snackbar: d, layout: e, toggles: f, tooltip: g, tabs: h};
 	});
+
 var _MichaelCombs28$elm_mdl$Material_Card$stopClick = _MichaelCombs28$elm_mdl$Material_Options_Internal$attribute(
 	A2(_elm_lang$html$Html_Attributes$attribute, 'onclick', 'var event = arguments[0] || window.event; event.stopPropagation();'));
 var _MichaelCombs28$elm_mdl$Material_Card$block = function (block) {
@@ -14665,6 +14721,7 @@ var _MichaelCombs28$elm_mdl$Material_Card$title = F2(
 				}),
 			block);
 	});
+
 var _MichaelCombs28$elm_mdl$Material_Color$text = function (_p0) {
 	var _p1 = _p0;
 	return _MichaelCombs28$elm_mdl$Material_Options$cs(
@@ -15044,70 +15101,7 @@ var _MichaelCombs28$elm_mdl$Material_Color$primaryDark = _MichaelCombs28$elm_mdl
 var _MichaelCombs28$elm_mdl$Material_Color$primaryContrast = _MichaelCombs28$elm_mdl$Material_Color$C('primary-contrast');
 var _MichaelCombs28$elm_mdl$Material_Color$accent = _MichaelCombs28$elm_mdl$Material_Color$C('accent');
 var _MichaelCombs28$elm_mdl$Material_Color$accentContrast = _MichaelCombs28$elm_mdl$Material_Color$C('accent-contrast');
-var _MichaelCombs28$elm_mdl$Material_Elevation$transition = function (duration) {
-	return A2(
-		_MichaelCombs28$elm_mdl$Material_Options$css,
-		'transition',
-		A2(
-			_elm_lang$core$Basics_ops['++'],
-			'box-shadow ',
-			A2(
-				_elm_lang$core$Basics_ops['++'],
-				_elm_lang$core$Basics$toString(duration),
-				'ms ease-in-out 0s')));
-};
-var _MichaelCombs28$elm_mdl$Material_Elevation$e0 = _MichaelCombs28$elm_mdl$Material_Options$nop;
-var _MichaelCombs28$elm_mdl$Material_Elevation$shadow = function (z) {
-	return _MichaelCombs28$elm_mdl$Material_Options$cs(
-		A2(
-			_elm_lang$core$Basics_ops['++'],
-			'mdl-shadow--',
-			A2(
-				_elm_lang$core$Basics_ops['++'],
-				_elm_lang$core$Basics$toString(z),
-				'dp')));
-};
-var _MichaelCombs28$elm_mdl$Material_Elevation$e2 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(2);
-var _MichaelCombs28$elm_mdl$Material_Elevation$e3 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(3);
-var _MichaelCombs28$elm_mdl$Material_Elevation$e4 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(4);
-var _MichaelCombs28$elm_mdl$Material_Elevation$e6 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(6);
-var _MichaelCombs28$elm_mdl$Material_Elevation$e8 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(8);
-var _MichaelCombs28$elm_mdl$Material_Elevation$e16 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(16);
-var _MichaelCombs28$elm_mdl$Material_Elevation$e24 = _MichaelCombs28$elm_mdl$Material_Elevation$shadow(24);
-var _MichaelCombs28$elm_mdl$Material_Elevation$elevations = _elm_lang$core$Array$fromList(
-	{
-		ctor: '::',
-		_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e0, _1: 0},
-		_1: {
-			ctor: '::',
-			_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e2, _1: 2},
-			_1: {
-				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e3, _1: 3},
-				_1: {
-					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e4, _1: 4},
-					_1: {
-						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e6, _1: 6},
-						_1: {
-							ctor: '::',
-							_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e8, _1: 8},
-							_1: {
-								ctor: '::',
-								_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e16, _1: 16},
-								_1: {
-									ctor: '::',
-									_0: {ctor: '_Tuple2', _0: _MichaelCombs28$elm_mdl$Material_Elevation$e24, _1: 24},
-									_1: {ctor: '[]'}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	});
+
 var _MichaelCombs28$elm_mdl$Material_Grid$clip = F3(
 	function (lower, upper, k) {
 		return A2(
@@ -15263,6 +15257,7 @@ var _MichaelCombs28$elm_mdl$Material_Grid$cell = F2(
 var _MichaelCombs28$elm_mdl$Material_Grid$Bottom = {ctor: 'Bottom'};
 var _MichaelCombs28$elm_mdl$Material_Grid$Middle = {ctor: 'Middle'};
 var _MichaelCombs28$elm_mdl$Material_Grid$Top = {ctor: 'Top'};
+
 var _MichaelCombs28$elm_mdl$Material_Scheme$scheme = F2(
 	function (primary, accent) {
 		return A2(
@@ -15324,6 +15319,7 @@ var _MichaelCombs28$elm_mdl$Material_Scheme$topWithScheme = F3(
 var _MichaelCombs28$elm_mdl$Material_Scheme$top = function (content) {
 	return A3(_MichaelCombs28$elm_mdl$Material_Scheme$topWithScheme, _MichaelCombs28$elm_mdl$Material_Color$Grey, _MichaelCombs28$elm_mdl$Material_Color$Grey, content);
 };
+
 var _MichaelCombs28$elm_mdl$Material_Typography$uppercase = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-typography--text-uppercase');
 var _MichaelCombs28$elm_mdl$Material_Typography$lowercase = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-typography--text-lowercase');
 var _MichaelCombs28$elm_mdl$Material_Typography$capitalize = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-typography--text-capitalize');
@@ -15351,6 +15347,7 @@ var _MichaelCombs28$elm_mdl$Material_Typography$display4 = _MichaelCombs28$elm_m
 var _MichaelCombs28$elm_mdl$Material_Typography$display3 = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-typography--display-3-color-contrast');
 var _MichaelCombs28$elm_mdl$Material_Typography$display2 = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-typography--display-2-color-contrast');
 var _MichaelCombs28$elm_mdl$Material_Typography$display1 = _MichaelCombs28$elm_mdl$Material_Options$cs('mdl-typography--display-1-color-contrast');
+
 var _elm_lang$core$Random$onSelfMsg = F3(
 	function (_p1, _p0, seed) {
 		return _elm_lang$core$Task$succeed(seed);
@@ -15729,6 +15726,7 @@ var _elm_lang$core$Random$cmdMap = F2(
 			A2(_elm_lang$core$Random$map, func, _p79._0));
 	});
 _elm_lang$core$Native_Platform.effectManagers['Random'] = {pkg: 'elm-lang/core', init: _elm_lang$core$Random$init, onEffects: _elm_lang$core$Random$onEffects, onSelfMsg: _elm_lang$core$Random$onSelfMsg, tag: 'cmd', cmdMap: _elm_lang$core$Random$cmdMap};
+
 var _elm_lang$keyboard$Keyboard$onSelfMsg = F3(
 	function (router, _p0, state) {
 		var _p1 = _p0;
@@ -15897,6 +15895,7 @@ var _elm_lang$keyboard$Keyboard$subMap = F2(
 			});
 	});
 _elm_lang$core$Native_Platform.effectManagers['Keyboard'] = {pkg: 'elm-lang/keyboard', init: _elm_lang$keyboard$Keyboard$init, onEffects: _elm_lang$keyboard$Keyboard$onEffects, onSelfMsg: _elm_lang$keyboard$Keyboard$onSelfMsg, tag: 'sub', subMap: _elm_lang$keyboard$Keyboard$subMap};
+
 var _elm_lang$svg$Svg$map = _elm_lang$virtual_dom$VirtualDom$map;
 var _elm_lang$svg$Svg$text = _elm_lang$virtual_dom$VirtualDom$text;
 var _elm_lang$svg$Svg$svgNamespace = A2(
@@ -15983,6 +15982,7 @@ var _elm_lang$svg$Svg$filter = _elm_lang$svg$Svg$node('filter');
 var _elm_lang$svg$Svg$script = _elm_lang$svg$Svg$node('script');
 var _elm_lang$svg$Svg$style = _elm_lang$svg$Svg$node('style');
 var _elm_lang$svg$Svg$view = _elm_lang$svg$Svg$node('view');
+
 var _elm_lang$svg$Svg_Attributes$writingMode = _elm_lang$virtual_dom$VirtualDom$attribute('writing-mode');
 var _elm_lang$svg$Svg_Attributes$wordSpacing = _elm_lang$virtual_dom$VirtualDom$attribute('word-spacing');
 var _elm_lang$svg$Svg_Attributes$visibility = _elm_lang$virtual_dom$VirtualDom$attribute('visibility');
@@ -16236,6 +16236,7 @@ var _elm_lang$svg$Svg_Attributes$additive = _elm_lang$virtual_dom$VirtualDom$att
 var _elm_lang$svg$Svg_Attributes$accumulate = _elm_lang$virtual_dom$VirtualDom$attribute('accumulate');
 var _elm_lang$svg$Svg_Attributes$accelerate = _elm_lang$virtual_dom$VirtualDom$attribute('accelerate');
 var _elm_lang$svg$Svg_Attributes$accentHeight = _elm_lang$virtual_dom$VirtualDom$attribute('accent-height');
+
 var _user$project$Types$BoardConfig = F3(
 	function (a, b, c) {
 		return {width: a, height: b, incr: c};
@@ -16305,6 +16306,7 @@ var _user$project$Types$West = {ctor: 'West'};
 var _user$project$Types$South = {ctor: 'South'};
 var _user$project$Types$East = {ctor: 'East'};
 var _user$project$Types$North = {ctor: 'North'};
+
 var _user$project$Board$conf = {width: 100, height: 100, incr: 5};
 var _user$project$Board$centerPos = {x: (_user$project$Board$conf.width / 2) | 0, y: (_user$project$Board$conf.height / 2) | 0};
 var _user$project$Board$tupleToPosition = function (_p0) {
@@ -16498,6 +16500,7 @@ var _user$project$Board$viewBoard = function (children) {
 		},
 		A2(_elm_lang$core$List$append, _user$project$Board$viewGrid, children));
 };
+
 var _user$project$Effects$tickStream = A2(
 	_elm_lang$core$Time$every,
 	_elm_lang$core$Time$millisecond * 250,
@@ -16527,10 +16530,12 @@ var _user$project$Effects$generateFood = A2(
 	_elm_lang$core$Random$generate,
 	_user$project$Types$NewFood,
 	A2(_elm_lang$core$Random$list, 30, _user$project$Effects$randFoodItem));
+
 var _user$project$Model$initFood = {ctor: '[]'};
 var _user$project$Model$initPlayer = {score: 0, head: _user$project$Board$centerPos, dir: _user$project$Types$East, body: _user$project$Types$Empty, isGrowing: false};
 var _user$project$Model$emptyModel = {player: _user$project$Model$initPlayer, state: _user$project$Types$Paused, food: _user$project$Model$initFood, mdl: _MichaelCombs28$elm_mdl$Material$model};
 var _user$project$Model$init = {ctor: '_Tuple2', _0: _user$project$Model$emptyModel, _1: _user$project$Effects$generateFood};
+
 var _user$project$View$viewFoodPixel = function (food) {
 	return A2(_user$project$Board$viewPosition, 'green', food.pos);
 };
@@ -16569,27 +16574,15 @@ var _user$project$View$viewScore = function (model) {
 		_MichaelCombs28$elm_mdl$Material_Card$view,
 		{
 			ctor: '::',
-			_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'width', '100%'),
+			_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'width', '128px'),
 			_1: {
 				ctor: '::',
-				_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'margin-top', '50px'),
+				_0: _MichaelCombs28$elm_mdl$Material_Color$background(
+					A2(_MichaelCombs28$elm_mdl$Material_Color$color, _MichaelCombs28$elm_mdl$Material_Color$Pink, _MichaelCombs28$elm_mdl$Material_Color$S500)),
 				_1: {
 					ctor: '::',
-					_0: _MichaelCombs28$elm_mdl$Material_Color$background(
-						A2(_MichaelCombs28$elm_mdl$Material_Color$color, _MichaelCombs28$elm_mdl$Material_Color$Blue, _MichaelCombs28$elm_mdl$Material_Color$S300)),
-					_1: {
-						ctor: '::',
-						_0: _MichaelCombs28$elm_mdl$Material_Elevation$e4,
-						_1: {
-							ctor: '::',
-							_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'display', 'inline-block'),
-							_1: {
-								ctor: '::',
-								_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'padding', '0.5rem 2rem'),
-								_1: {ctor: '[]'}
-							}
-						}
-					}
+					_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'display', 'inline-block'),
+					_1: {ctor: '[]'}
 				}
 			}
 		},
@@ -16597,18 +16590,17 @@ var _user$project$View$viewScore = function (model) {
 			ctor: '::',
 			_0: A2(
 				_MichaelCombs28$elm_mdl$Material_Card$title,
+				{ctor: '[]'},
 				{
 					ctor: '::',
-					_0: _MichaelCombs28$elm_mdl$Material_Color$text(_MichaelCombs28$elm_mdl$Material_Color$white),
-					_1: {
-						ctor: '::',
-						_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-size', '2rem'),
-						_1: {ctor: '[]'}
-					}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text('Score'),
+					_0: A2(
+						_MichaelCombs28$elm_mdl$Material_Card$head,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Score'),
+							_1: {ctor: '[]'}
+						}),
 					_1: {ctor: '[]'}
 				}),
 			_1: {
@@ -16617,19 +16609,11 @@ var _user$project$View$viewScore = function (model) {
 					_MichaelCombs28$elm_mdl$Material_Card$text,
 					{
 						ctor: '::',
-						_0: _MichaelCombs28$elm_mdl$Material_Color$text(_MichaelCombs28$elm_mdl$Material_Color$white),
+						_0: _MichaelCombs28$elm_mdl$Material_Typography$display4,
 						_1: {
 							ctor: '::',
-							_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-size', '3rem'),
-							_1: {
-								ctor: '::',
-								_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-weight', 'bold'),
-								_1: {
-									ctor: '::',
-									_0: _MichaelCombs28$elm_mdl$Material_Typography$right,
-									_1: {ctor: '[]'}
-								}
-							}
+							_0: _MichaelCombs28$elm_mdl$Material_Color$text(_MichaelCombs28$elm_mdl$Material_Color$primary),
+							_1: {ctor: '[]'}
 						}
 					},
 					{
@@ -16643,34 +16627,14 @@ var _user$project$View$viewScore = function (model) {
 		});
 };
 var _user$project$View$viewFailure = function (model) {
-	return A2(
-		_MichaelCombs28$elm_mdl$Material_Card$view,
-		{
-			ctor: '::',
-			_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'width', '100%'),
-			_1: {
-				ctor: '::',
-				_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'margin-top', '50px'),
-				_1: {
-					ctor: '::',
-					_0: _MichaelCombs28$elm_mdl$Material_Elevation$e4,
-					_1: {ctor: '[]'}
-				}
-			}
-		},
+	return _elm_lang$core$Native_Utils.eq(model.state, _user$project$Types$Failed) ? A2(
+		_elm_lang$html$Html$div,
+		{ctor: '[]'},
 		{
 			ctor: '::',
 			_0: A2(
-				_MichaelCombs28$elm_mdl$Material_Card$title,
-				{
-					ctor: '::',
-					_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'text-align', 'center'),
-					_1: {
-						ctor: '::',
-						_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'font-size', '4rem'),
-						_1: {ctor: '[]'}
-					}
-				},
+				_elm_lang$html$Html$div,
+				{ctor: '[]'},
 				{
 					ctor: '::',
 					_0: _elm_lang$html$Html$text('GAME OVER!'),
@@ -16678,75 +16642,43 @@ var _user$project$View$viewFailure = function (model) {
 				}),
 			_1: {
 				ctor: '::',
-				_0: A2(
-					_MichaelCombs28$elm_mdl$Material_Card$text,
+				_0: A5(
+					_MichaelCombs28$elm_mdl$Material_Button$render,
+					_user$project$Types$Mdl,
 					{
 						ctor: '::',
-						_0: _MichaelCombs28$elm_mdl$Material_Options$center,
+						_0: 0,
 						_1: {ctor: '[]'}
+					},
+					model.mdl,
+					{
+						ctor: '::',
+						_0: _MichaelCombs28$elm_mdl$Material_Button$raised,
+						_1: {
+							ctor: '::',
+							_0: _MichaelCombs28$elm_mdl$Material_Button$colored,
+							_1: {
+								ctor: '::',
+								_0: _MichaelCombs28$elm_mdl$Material_Button$ripple,
+								_1: {
+									ctor: '::',
+									_0: _MichaelCombs28$elm_mdl$Material_Button$onClick(_user$project$Types$Reset),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
 					},
 					{
 						ctor: '::',
-						_0: A2(
-							_elm_lang$html$Html$div,
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$style(
-									{
-										ctor: '::',
-										_0: {ctor: '_Tuple2', _0: 'padding-right', _1: '30px'},
-										_1: {ctor: '[]'}
-									}),
-								_1: {ctor: '[]'}
-							},
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html$text(
-									A2(
-										_elm_lang$core$Basics_ops['++'],
-										'Final Score: ',
-										_elm_lang$core$Basics$toString(model.player.score))),
-								_1: {ctor: '[]'}
-							}),
-						_1: {
-							ctor: '::',
-							_0: A5(
-								_MichaelCombs28$elm_mdl$Material_Button$render,
-								_user$project$Types$Mdl,
-								{
-									ctor: '::',
-									_0: 0,
-									_1: {ctor: '[]'}
-								},
-								model.mdl,
-								{
-									ctor: '::',
-									_0: _MichaelCombs28$elm_mdl$Material_Button$raised,
-									_1: {
-										ctor: '::',
-										_0: _MichaelCombs28$elm_mdl$Material_Button$colored,
-										_1: {
-											ctor: '::',
-											_0: _MichaelCombs28$elm_mdl$Material_Button$ripple,
-											_1: {
-												ctor: '::',
-												_0: _MichaelCombs28$elm_mdl$Material_Button$onClick(_user$project$Types$Reset),
-												_1: {ctor: '[]'}
-											}
-										}
-									}
-								},
-								{
-									ctor: '::',
-									_0: _elm_lang$html$Html$text('Reset'),
-									_1: {ctor: '[]'}
-								}),
-							_1: {ctor: '[]'}
-						}
+						_0: _elm_lang$html$Html$text('Reset'),
+						_1: {ctor: '[]'}
 					}),
 				_1: {ctor: '[]'}
 			}
-		});
+		}) : A2(
+		_elm_lang$html$Html$div,
+		{ctor: '[]'},
+		{ctor: '[]'});
 };
 var _user$project$View$viewBody = function (model) {
 	return A2(
@@ -16759,11 +16691,7 @@ var _user$project$View$viewBody = function (model) {
 				{
 					ctor: '::',
 					_0: A2(_MichaelCombs28$elm_mdl$Material_Grid$size, _MichaelCombs28$elm_mdl$Material_Grid$All, 8),
-					_1: {
-						ctor: '::',
-						_0: _MichaelCombs28$elm_mdl$Material_Options$center,
-						_1: {ctor: '[]'}
-					}
+					_1: {ctor: '[]'}
 				},
 				{
 					ctor: '::',
@@ -16791,10 +16719,25 @@ var _user$project$View$viewBody = function (model) {
 					},
 					{
 						ctor: '::',
-						_0: _elm_lang$core$Native_Utils.eq(model.state, _user$project$Types$Failed) ? _user$project$View$viewFailure(model) : _user$project$View$viewScore(model),
+						_0: _user$project$View$viewScore(model),
 						_1: {ctor: '[]'}
 					}),
-				_1: {ctor: '[]'}
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_MichaelCombs28$elm_mdl$Material_Grid$cell,
+						{
+							ctor: '::',
+							_0: A2(_MichaelCombs28$elm_mdl$Material_Grid$size, _MichaelCombs28$elm_mdl$Material_Grid$All, 4),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _user$project$View$viewFailure(model),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}
 			}
 		});
 };
@@ -16802,16 +16745,7 @@ var _user$project$View$viewHeader = A2(
 	_elm_lang$html$Html$div,
 	{
 		ctor: '::',
-		_0: _elm_lang$html$Html_Attributes$style(
-			{
-				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: 'font-size', _1: '3rem'},
-				_1: {
-					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'padding', _1: '1.5rem'},
-					_1: {ctor: '[]'}
-				}
-			}),
+		_0: _elm_lang$html$Html_Attributes$class('header'),
 		_1: {ctor: '[]'}
 	},
 	{
@@ -16852,6 +16786,7 @@ var _user$project$View$view = function (model) {
 				}
 			}));
 };
+
 var _user$project$Update$keyWhenFailed = F2(
 	function (model, key) {
 		var _p0 = key;
@@ -17051,8 +16986,10 @@ var _user$project$Update$update = F2(
 				return A2(_MichaelCombs28$elm_mdl$Material$update, _p7._0, model);
 		}
 	});
+
 var _user$project$Main$main = _elm_lang$html$Html$program(
 	{init: _user$project$Model$init, view: _user$project$View$view, update: _user$project$Update$update, subscriptions: _user$project$Effects$subscriptions})();
+
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
 if (typeof _user$project$Main$main !== 'undefined') {
@@ -17088,4 +17025,4 @@ for (var publicModule in Elm)
 }
 
 }).call(this);
-</script></head><body><script type="text/javascript">Elm.Main.fullscreen()</script></body></html>
+
